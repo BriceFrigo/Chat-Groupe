@@ -6,6 +6,7 @@ import '../css/style.css'
 export const Chat = (props) =>{
 
     const {room} = props;
+    
 
     const [messages, setMessages] = useState([]);
     const [newMessage, setNewMessage] = useState("");
@@ -42,7 +43,7 @@ export const Chat = (props) =>{
     
     <div className="chat-app">
         <div className="important">
-            <h1>{room.toUpperCase()}</h1>
+            <h1>{room}</h1>
         </div>
         <section className="text">
             <div className="messages">

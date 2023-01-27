@@ -1,9 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import { Auth } from './components/Auth';
 import { useState, useRef } from 'react';
 import Cookies from "universal-cookie";
-import { CONSTANTS } from '@firebase/util';
 import { Chat } from './components/Chat';
 import '../src/css/style.css'
 const cookies = new  Cookies();
@@ -34,19 +32,19 @@ function App() {
           <div className='box'>
             <h2>General</h2>
             <p>lorem loremloremlorem loremloremlorem loremloremlorem loremlorem </p>
-            <button>Rejoindre</button>
+            <button onClick={() => setRoom("General")}>Rejoindre</button>
           </div>
 
           <div className='box'>
             <h2>RPsofiane</h2>
             <p>lorem loremloremlorem loremloremlorem loremloremlorem loremlorem </p>
-            <button>Rejoindre</button>
+            <button onClick={() => setRoom("RPsofiane")}>Rejoindre</button>
           </div>
 
           <div className='box'>
             <h2>RPnathan</h2>
             <p>lorem loremloremlorem loremloremlorem loremloremlorem loremlorem </p>
-            <button>Rejoindre</button>
+            <button onClick={() => setRoom("RPnatahn")}>Rejoindre</button>
           </div>
         </section>
 
